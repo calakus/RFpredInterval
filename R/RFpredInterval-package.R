@@ -1,5 +1,5 @@
 #' RFpredInterval: A package for building prediction intervals with random
-#' forests
+#' forests and boosted forests
 #'
 #' RFpredInterval provides methods to build prediction intervals with random
 #' forests. The methods provided in the package are Prediction Intervals with

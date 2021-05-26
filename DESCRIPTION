@@ -13,7 +13,7 @@ Description: Implements various prediction interval methods with random forests 
     (PIBF) as described in CITATION <arXiv:> and rfpi() builds 15 distinct variations of prediction 
     intervals with random forests (RFPI) proposed by Roy and Larocque (2020) 
     <doi:10.1177/0962280219829885>.
-Depends: R (>= 3.5.0)
+Depends: R (>= 3.6.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
