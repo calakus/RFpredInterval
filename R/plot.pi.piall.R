@@ -21,6 +21,25 @@
 #'
 #' @export
 #'
+#' @examples
+#' \donttest{
+#' ## load example data
+#' data(BostonHousing, package = "RFpredInterval")
+#' set.seed(2345)
+#'
+#' ## define train/test split
+#' testindex <- 1
+#' trainindex <- sample(2:nrow(BostonHousing), size = 20, replace = FALSE)
+#' traindata <- BostonHousing[trainindex, ]
+#' testdata <- BostonHousing[testindex, ]
+#'
+#' ## build 95% PIs with all 16 methods for the first observation in testdata
+#' out <- piall(formula = medv ~ ., traindata = traindata,
+#'              testdata = testdata, num.trees = 20)
+#'
+#' ## plot the constructed PIs for test_id = 1 with all methods
+#' plot.pi(out, test_id = 1, sort = FALSE)
+#' }
 #'
 #' @method plot.pi piall
 #' @aliases plot.pi.piall plot.pi
