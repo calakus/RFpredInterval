@@ -4,7 +4,7 @@
 \name{RFpredInterval-package}
 \alias{RFpredInterval-package}
 \title{RFpredInterval: A package for building prediction intervals with random
-forests}
+forests and boosted forests}
 \description{
 RFpredInterval provides methods to build prediction intervals with random
 forests. The methods provided in the package are Prediction Intervals with

@@ -107,7 +107,7 @@
 #' out2$alphaw
 #' }
 #'
-#' @seealso \code{\link{rfpi}}
+#' @seealso \code{\link{rfpi}} \code{\link{piall}}
 
 pibf <- function(formula,
                  traindata,

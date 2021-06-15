@@ -134,7 +134,7 @@
 #' cbind(out2$quant_interval$lower, out2$quant_interval$upper)
 #'
 #' }
-#' @seealso \code{\link{pibf}}
+#' @seealso \code{\link{pibf}} \code{\link{piall}}
 
 rfpi <- function(formula,
                  traindata,

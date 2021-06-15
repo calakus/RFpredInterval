@@ -30,6 +30,5 @@ Suggests:
     knitr,
     rmarkdown,
     testthat
-VignetteBuilder: knitr
 URL: https://github.com/calakus/RFpredInterval
 BugReports: https://github.com/calakus/RFpredInterval/issues

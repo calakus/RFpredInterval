@@ -5,7 +5,7 @@ importFrom("data.tree", "FromDataFrameNetwork", "SetGraphStyle",
 importFrom("DiagrammeR", "render_graph", "create_graph",
            "create_node_df", "create_edge_df", "add_global_graph_attrs")
 importFrom("parallel", mclapply)
-importFrom("graphics", "abline", "axis", "box", "boxplot", "bxp",
+importFrom("graphics", "abline", "arrows", "axis", "box", "boxplot", "bxp", "grid",
            "legend", "lines", "matlines", "matplot", "mtext", "par", "plot",
            "plot.new", "plot.window", "points", "rug", "segments",
            "strwidth", "text", "title", "grconvertX", "grconvertY", "plot.default")
@@ -20,3 +20,9 @@ import(data.table)
 
 export(pibf)
 export(rfpi)
+export(piall)
+export(plot.pi)
+export(plot.pi.piall)
+
+S3method(plot, pi)
+S3method(plot, pi.piall)

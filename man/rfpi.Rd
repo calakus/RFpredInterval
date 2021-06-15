@@ -173,5 +173,5 @@ Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 random forests. Statistical methods in medical research, 29(1), 205-229.
 }
 \seealso{
-\code{\link{pibf}}
+\code{\link{pibf}} \code{\link{piall}}
 }
