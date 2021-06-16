@@ -94,6 +94,7 @@
 #'
 #' @references Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 #'   random forests. Statistical methods in medical research, 29(1), 205-229.
+#'   doi:10.1177/0962280219829885.
 #'
 #' @examples
 #' \donttest{

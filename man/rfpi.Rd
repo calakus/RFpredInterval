@@ -171,6 +171,7 @@ cbind(out2$quant_interval$lower, out2$quant_interval$upper)
 \references{
 Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 random forests. Statistical methods in medical research, 29(1), 205-229.
+doi:10.1177/0962280219829885.
 }
 \seealso{
 \code{\link{pibf}} \code{\link{piall}}

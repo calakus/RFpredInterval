@@ -30,7 +30,7 @@ splitting rules L1 and SPI. For the least-squares splitting rule, both
 \references{
 Alakus, C., Larocque, D., and Labbe, A. (2021). RFpredInterval:
 An R Package for Prediction Intervals with Random Forests and Boosted
-Forests. arXiv preprint \url{https://arxiv.org/abs/2106.08217}.
+Forests. arXiv preprint arXiv:2106.08217.
 
 Ishwaran H, Kogalur U (2021). Fast Unified Random Forests for
 Survival, Regression, and Classification (RF-SRC). R package version
@@ -38,10 +38,10 @@ Survival, Regression, and Classification (RF-SRC). R package version
 
 Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 random forests. Statistical methods in medical research, 29(1), 205-229.
-\url{https://doi.org/10.1177/0962280219829885}.
+doi:10.1177/0962280219829885.
 
 Wright MN, Ziegler A (2017). “ranger: A Fast Implementation of
 Random Forests for High Dimensional Data in C++ and R.” Journal of
 Statistical Software, 77(1), 1–17.
-\url{https://doi.org/10.18637/jss.v077.i01}.
+doi:10.18637/jss.v077.i01.
 }
