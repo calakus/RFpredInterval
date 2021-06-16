@@ -81,13 +81,13 @@
 #'
 #' ## define train/test split
 #' testindex <- 1
-#' trainindex <- sample(2:nrow(BostonHousing), size = 20, replace = FALSE)
+#' trainindex <- sample(2:nrow(BostonHousing), size = 50, replace = FALSE)
 #' traindata <- BostonHousing[trainindex, ]
 #' testdata <- BostonHousing[testindex, ]
 #'
 #' ## construct 95% PI with 16 methods for the first observation in testdata
 #' out <- piall(formula = medv ~ ., traindata = traindata,
-#'   testdata = testdata, num.trees = 20)
+#'   testdata = testdata, num.trees = 50)
 #' }
 #'
 #' @seealso \code{\link{pibf}} \code{\link{rfpi}} \code{\link{plot.pi.piall}}
