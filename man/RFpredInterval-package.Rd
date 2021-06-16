@@ -10,23 +10,27 @@ RFpredInterval provides methods to build prediction intervals with random
 forests. The methods provided in the package are Prediction Intervals with
 Boosted Forests (PIBF) proposed by Alakus et al. (2021) and 15 distinct
 variations to build PIs proposed by Roy and Larocque (2020). RFpredInterval
-includes two functions: \code{pibf} and \code{rfpi}. \code{pibf} applies the
-PIBF method and it uses the CRAN package 'ranger' (Wright and Ziegler, 2017)
-to fit random forests. \code{rfpi} applies the 15 variations proposed by Roy
-and Larocque (2020). For \code{rfpi}, RFpredInterval uses 'randomForestSRC'
-package (Ishwaran and Kogalur, 2021) by freezing at the version 2.11.0. The
-custom splitting rule feature is utilised to apply the splitting rules L1 and
-SPI. For the least-squares splitting rule, both 'randomForestSRC' and
-'ranger' packages are applicable.
+includes two main functions: \code{pibf} and \code{rfpi}. \code{pibf} applies
+the PIBF method and it uses the CRAN package 'ranger' (Wright and Ziegler,
+2017) to fit random forests. \code{rfpi} applies the 15 variations proposed
+by Roy and Larocque (2020). For \code{rfpi}, RFpredInterval uses
+'randomForestSRC' package (Ishwaran and Kogalur, 2021) by freezing at the
+version 2.11.0. The custom splitting rule feature is utilised to apply the
+splitting rules L1 and SPI. For the least-squares splitting rule, both
+'randomForestSRC' and ranger' packages are applicable.
 }
 \section{RFpredInterval functions}{
 
 \code{\link{pibf}}
 \code{\link{rfpi}}
+\code{\link{piall}}
+\code{\link{plot.pi.piall}}
 }
 
 \references{
-ADD OUR ARXIV REFERENCE!!!
+Alakus, C., Larocque, D., and Labbe, A. (2021). RFpredInterval:
+An R Package for Prediction Intervals with Random Forests and Boosted
+Forests. arXiv preprint \url{https://arxiv.org/abs/2106.08217}.
 
 Ishwaran H, Kogalur U (2021). Fast Unified Random Forests for
 Survival, Regression, and Classification (RF-SRC). R package version
@@ -34,8 +38,10 @@ Survival, Regression, and Classification (RF-SRC). R package version
 
 Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 random forests. Statistical methods in medical research, 29(1), 205-229.
+\url{https://doi.org/10.1177/0962280219829885}.
 
 Wright MN, Ziegler A (2017). “ranger: A Fast Implementation of
 Random Forests for High Dimensional Data in C++ and R.” Journal of
-Statistical Software, 77(1), 1–17. doi: <10.18637/jss.v077.i01>.
+Statistical Software, 77(1), 1–17.
+\url{https://doi.org/10.18637/jss.v077.i01}.
 }

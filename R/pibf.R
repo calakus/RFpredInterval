@@ -68,8 +68,12 @@
 #'   \item{alphaw}{Working level of \code{alpha}, i.e. \eqn{alpha_w}. If
 #'   \code{calibration = FALSE}, it returns \code{NULL}.}
 #'
+#' @references Alakus, C., Larocque, D., and Labbe, A. (2021). RFpredInterval:
+#'   An R Package for Prediction Intervals with Random Forests and Boosted
+#'   Forests. arXiv preprint \url{https://arxiv.org/abs/2106.08217}.
 #' @references Roy, M. H., & Larocque, D. (2020). Prediction intervals with
 #'   random forests. Statistical methods in medical research, 29(1), 205-229.
+#'   \url{https://doi.org/10.1177/0962280219829885}.
 #'
 #' @examples
 #' \donttest{
