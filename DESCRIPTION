@@ -8,10 +8,10 @@ Authors@R:
       person(given = "Aurelie", family = "Labbe", role = c("aut"), email = "aurelie.labbe@hec.ca"),
       person(given = "Hemant", family = "Ishwaran", role = c("ctb"), comment = "Author of included randomForestSRC codes"),
       person(given = "Udaya B.", family = "Kogalur", role = c("ctb"), comment = "Author of included randomForestSRC codes"))
-Description: Implements various prediction interval methods with random forests and boosted forests. 
-    The package has two main functions: pibf() produces prediction intervals with boosted forests 
-    (PIBF) as described in Alakus et al. (2021) <arXiv:2106.08217> and rfpi() builds 15 distinct 
-    variations of prediction intervals with random forests (RFPI) proposed by Roy and Larocque (2020) 
+Description: Implements various prediction interval methods with random forests and boosted forests.
+    The package has two main functions: pibf() produces prediction intervals with boosted forests
+    (PIBF) as described in Alakus et al. (2021) <arXiv:2106.08217> and rfpi() builds 15 distinct
+    variations of prediction intervals with random forests (RFPI) proposed by Roy and Larocque (2020)
     <doi:10.1177/0962280219829885>.
 Depends: R (>= 3.6.0)
 License: GPL (>= 3)
