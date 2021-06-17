@@ -102,16 +102,16 @@ data(BostonHousing, package = "RFpredInterval")
 set.seed(2345)
 
 ## define train/test split
-trainindex <- sample(1:nrow(BostonHousing),
-  size = round(nrow(BostonHousing) * 0.7), replace = FALSE)
+testindex <- 1:10
+trainindex <- sample(11:nrow(BostonHousing), size = 100, replace = FALSE)
 traindata <- BostonHousing[trainindex, ]
-testdata <- BostonHousing[-trainindex, ]
+testdata <- BostonHousing[testindex, ]
 px <- ncol(BostonHousing) - 1
 
 ## construct 95\% PI with "cv" calibration using 5-folds
 out <- pibf(formula = medv ~ ., traindata = traindata,
   testdata = testdata, calibration = "cv", numfolds = 5,
-  params_ranger = list(num.trees = 50))
+  params_ranger = list(num.trees = 40))
 
 ## get the PI for the first observation in the testdata
 c(out$pred_interval$lower[1], out$pred_interval$upper[1])
@@ -122,7 +122,7 @@ out$test_pred
 ## construct 90\% PI with "oob" calibration
 out2 <- pibf(formula = medv ~ ., traindata = traindata,
   testdata = testdata, alpha = 0.1, calibration = "oob",
-  coverage_range = c(0.89,91), params_ranger = list(num.trees = 50))
+  coverage_range = c(0.89,91), params_ranger = list(num.trees = 40))
 
 ## get the PI for the testdata
 out2$pred_interval
