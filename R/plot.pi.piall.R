@@ -51,7 +51,7 @@ plot.pi.piall <- function(x, test_id = 1, sort = TRUE, show_response = TRUE, ...
 {
   object <- x
   if (!inherits(object, "piall")) {
-    stop("This function only works for objects of class 'all'.")
+    stop("This function only works for objects of class 'piall'.")
   }
 
   ## object cannot be missing
@@ -100,7 +100,7 @@ plot.pi.piall <- function(x, test_id = 1, sort = TRUE, show_response = TRUE, ...
   on.exit(par(old.par))
   par(mfrow=c(1,1), mar=c(3,6,2,2), cex.axis=0.75, cex.main=1)
 
-  ## draw a horizontal error bars for PIs ...
+  ## draw horizontal error bars representing the PIs
   plot(out_testid$Pred, out_testid$Method_id,
        xlab = NA, ylab = NA, type = "n",
        xlim = range(c(min(out_testid$Lower), max(out_testid$Upper), object$test_response[test_id])), yaxt = "n",
@@ -109,6 +109,8 @@ plot.pi.piall <- function(x, test_id = 1, sort = TRUE, show_response = TRUE, ...
   suppressWarnings(arrows(out_testid$Lower, out_testid$Method_id, out_testid$Upper, out_testid$Method_id, length = 0.05, angle = 90, code = 3, lwd = 2, col = "#5BB0BA"))
   points(out_testid$Pred, out_testid$Method_id, col = "#C44B4F", pch = 20)
   axis(2, at = out_testid$Method_id, labels = gsub("_","-",out_testid$Method), col.axis = "black", las = 2, tck = 0)
+
+  ## add a vertical line for the true test response
   if (!is.null(object$test_response) & show_response) {
     abline(v = object$test_response[test_id], lty = "dashed", col = "#1C4670")
   }

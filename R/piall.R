@@ -134,7 +134,6 @@ piall <- function(formula,
                    calibration = "cv", params_ranger = params_ranger)
 
   ## build PIs with RFPI
-  split_rule <- c("ls", "l1", "spi")
   pi_method <- c("lm", "spi", "quant", "hdr", "chdr")
 
   rfpi_ls_obj <- rfpi(formula, traindata, testdata, alpha,

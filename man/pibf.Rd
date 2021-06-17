@@ -97,7 +97,6 @@ procedure for the PIBF method is calibration with CV.
 }
 
 \examples{
-\donttest{
 ## load example data
 data(BostonHousing, package = "RFpredInterval")
 set.seed(2345)
@@ -130,7 +129,6 @@ out2$pred_interval
 
 ## get the working level of alpha (alphaw)
 out2$alphaw
-}
 
 }
 \references{

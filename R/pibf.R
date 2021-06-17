@@ -76,7 +76,6 @@
 #'   doi:10.1177/0962280219829885.
 #'
 #' @examples
-#' \donttest{
 #' ## load example data
 #' data(BostonHousing, package = "RFpredInterval")
 #' set.seed(2345)
@@ -109,7 +108,6 @@
 #'
 #' ## get the working level of alpha (alphaw)
 #' out2$alphaw
-#' }
 #'
 #' @seealso \code{\link{rfpi}} \code{\link{piall}}
 
