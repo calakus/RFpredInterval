@@ -150,7 +150,7 @@ pibf <- function(formula,
   yvar.names <- yvar.names[-length(yvar.names)]
   xvar.names <- setdiff(all.names, yvar.names)
   xvar <- traindata[, xvar.names, drop = FALSE]
-  yvar <- traindata[, yvar.names, drop = FALSE]
+  yvar <- traindata[, yvar.names]
 
   ## get sample size and px
   ntrain <- nrow(traindata)
