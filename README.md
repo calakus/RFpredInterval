@@ -1,4 +1,4 @@
-[![Build Status](https://app.travis-ci.com/calakus/RFpredInterval.svg?branch=main)](https://app.travis-ci.com/calakus/RFpredInterval.svg?branch=main)
+[![Build Status](https://api.travis-ci.com/calakus/RFpredInterval.svg?branch=main)](https://api.travis-ci.com/calakus/RFpredInterval.svg?branch=main)
 
 # RFpredInterval
 R package which implements Prediction Intervals with Random Forests and Boosted Forests

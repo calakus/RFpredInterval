@@ -1,4 +1,4 @@
-## RFpredInterval 1.0.3
+## RFpredInterval 1.0.4
 Fixed the omp.h declaration before R headers per Prof. Ripley, in anticipation of clang 13.0.0.
 
 ## RFpredInterval 1.0.2
