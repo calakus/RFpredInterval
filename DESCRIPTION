@@ -1,7 +1,7 @@
 Package: RFpredInterval
 Type: Package
 Title: Prediction Intervals with Random Forests and Boosted Forests
-Version: 1.0.5
+Version: 1.0.6
 Authors@R: 
     c(person(given = "Cansu", family = "Alakus", role = c("aut", "cre"), email = "cansu.alakus@hec.ca"),
       person(given = "Denis", family = "Larocque", role = c("aut"), email = "denis.larocque@hec.ca"),
@@ -18,7 +18,7 @@ License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Imports: 
     ranger,
     data.table,
